@@ -2,8 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FirstPageLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="LogInOnClick"
     tools:context=".MainActivity">
 
     <EditText
@@ -22,7 +24,7 @@
         android:id="@+id/userPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="Enter Your Password"
         android:inputType="textPassword"
@@ -34,26 +36,29 @@
         android:id="@+id/signIn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="372dp"
-        android:background="#102DCD"
+        android:layout_marginTop="276dp"
+        android:background="#052AF6"
         android:onClick="onClick"
         android:text="sign in"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/userPassword"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/userPassword"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:id="@+id/signUp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="95dp"
-        android:onClick="clickClick"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:background="#052AF6"
+        android:text="Create a new Account"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/signIn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/signIn"
         app:layout_constraintTop_toBottomOf="@+id/signIn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
