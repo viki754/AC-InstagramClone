@@ -1,8 +1,5 @@
 package com.example.ac_instagramclone;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -10,9 +7,9 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
-import android.widget.VideoView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.parse.ParseException;
 import com.parse.ParseUser;
@@ -92,6 +89,7 @@ public class SignUpAct extends AppCompatActivity  implements View.OnClickListene
     private void transitionToSocialMediaActivity(){
         Intent intent =new Intent(SignUpAct.this,SocialMediaActivity.class);
         startActivity(intent);
+        finish();
     }
 
     }
